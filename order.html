@@ -9,6 +9,24 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbar6" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar6" style=""> <a class="navbar-brand text-primary d-none d-md-block" href="#">
+          <i class="fa d-inline fa-lg fa-circle"></i>
+          <b>ワルード似顔絵</b>
+        </a>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">サンプルイメージ</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">注文確認</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">注文について</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">お知らせ</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ・作家募集<br></a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="py-2">
     <div class="container">
       <div class="row">
@@ -43,48 +61,6 @@
       </div>
     </div>
   </div>
-  <div class="py-4">
-    <div class="container">
-      <div class="row py-3">
-        <div class="mx-auto col-lg-6 col-6">
-          <h1 class="my-2 text-center">サンプルイメージ情報</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="mx-auto col-md-6">
-          <div class="card">
-            <img class="card-img-top" src="https://static.pingendo.com/cover-moon.svg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Title</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">価格：</li>
-              <li class="list-group-item">人数：</li>
-              <li class="list-group-item">作品情報：</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbar6" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbar6" style=""> <a class="navbar-brand text-primary d-none d-md-block" href="#">
-          <i class="fa d-inline fa-lg fa-circle"></i>
-          <b>ワルード似顔絵</b>
-        </a>
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"> <a class="nav-link" href="#">サンプルイメージ</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">注文確認</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">注文について</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">お知らせ</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ・作家募集<br></a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <div class="py-4 text-center">
     <div class="container">
       <div class="row py-3">
@@ -126,8 +102,8 @@
             <div class="form-group my-3 w-100 p-2">
               <label><b>プレミアムラッピングの有無</b></label>
               <select name="select" class="w-100">
-                <option value="Y">しない</option>
-                <option value="N">プレミアムラッピング希望（+¥500）</option>
+                <option value="false">しない</option>
+                <option value="true">プレミアムラッピング希望（+¥500）</option>
               </select>
             </div>
           </div>
@@ -138,8 +114,13 @@
   </div>
   <div class="py-5">
     <div class="container">
+      <div class="row py-3">
+        <div class="mx-auto col-lg-6 col-6">
+          <h1 class="my-2 text-center">注文情報</h1>
+        </div>
+      </div>
       <div class="row">
-        <div class="mx-auto  col-md-6">
+        <div class="col-md-6 p-4 my-auto mx-auto">
           <ul class="list-group list-group-flush text-right">
             <li class="list-group-item  d-flex justify-content-between lh-condensed">
               <div>
@@ -160,6 +141,19 @@
               <span class="text-muted"><b>¥14000</b></span>
             </li>
           </ul>
+        </div>
+        <div class="mx-auto col-md-6 p-4">
+          <div class="card border-primary">
+            <img class="card-img-top" src="../../Downloads/chi1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">価格：</li>
+              <li class="list-group-item">人数：</li>
+              <li class="list-group-item">作品情報：</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
