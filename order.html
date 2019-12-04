@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="flat.css">
 </head>
 
 <body>
@@ -120,6 +120,20 @@
         </div>
       </div>
       <div class="row">
+        <div class="mx-auto col-md-6 p-4">
+          <div class="card border-primary">
+            <img class="card-img-top" src="../../Downloads/chi1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">価格：</li>
+              <li class="list-group-item">人数：</li>
+              <li class="list-group-item">作品情報：</li>
+            </ul>
+          </div>
+        </div>
         <div class="col-md-6 p-4 my-auto mx-auto">
           <ul class="list-group list-group-flush text-right">
             <li class="list-group-item  d-flex justify-content-between lh-condensed">
@@ -142,19 +156,6 @@
             </li>
           </ul>
         </div>
-        <div class="mx-auto col-md-6 p-4">
-          <div class="card border-primary">
-            <img class="card-img-top" src="../../Downloads/chi1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Title</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">価格：</li>
-              <li class="list-group-item">人数：</li>
-              <li class="list-group-item">作品情報：</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -173,12 +174,23 @@
               <div class="form-group col-md-6"> <label><b>名前（ふりがな）</b></label> <input type="text" class="form-control" placeholder="やまだたろう"> </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6"> <label><b>メール</b></label> <input type="text" class="form-control" placeholder="gmail@gmail.com"> </div>
-              <div class="form-group col-md-6"> <label><b>ラインID</b></label> <input type="text" class="form-control" placeholder="lindid"> </div>
+              <div class="form-group col-md-6"> <label><b>メール</b></label> <input type="text" class="form-control" placeholder="gmail@gmail.com">
+                <div class="form-group py-2">
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                </div>
+              </div>
+              <div class="form-group col-md-6"> <label><b>ラインID</b></label> <input type="text" class="form-control" placeholder="lindid">
+                <div class="form-group py-2">
+                  <a class="btn btn-outline-primary w-100" href="#"><i class="fa fa-car fa-2x"></i></a>
+                </div>
+              </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6"> <label><b>電話番号（携帯）</b></label> <input type="text" class="form-control" placeholder="09012345678"> </div>
-              <div class="form-group col-md-6"> <label><b>電話番号（家）</b></label> <input type="text" class="form-control" placeholder="0481234567"> </div>
+              <div class="form-group col-md-6"> <label><b class="">電話番号（家）</b></label> <input type="text" class="form-control" placeholder="0481234567"> </div>
             </div>
             <div class="form-group"><label><b>お届け先（郵便番号）</b></label>
               <div class="input-group w-75">
