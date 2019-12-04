@@ -5,10 +5,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="flat.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbar6" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar6" style=""> <a class="navbar-brand text-primary d-none d-md-block" href="#">
+          <i class="fa d-inline fa-lg fa-circle"></i>
+          <b>ワルード似顔絵</b>
+        </a>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">サンプルイメージ</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">注文確認</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">注文について</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">お知らせ</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ・作家募集<br></a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="py-2">
     <div class="container">
       <div class="row">
@@ -16,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="text-center py-4">
+  <div class="text-center py-4" style="	background-image: url(https://pingendo.com/site-assets/cover.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -43,48 +61,6 @@
       </div>
     </div>
   </div>
-  <div class="py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 p-lg-5 p-3">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="">Heading 1</h1>
-            </div>
-          </div><img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-1.svg" width="1500">
-        </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-          <div class="card">
-            <div class="card-body h-25" style="">
-              <h5 class="card-title"><b>作品情報</b></h5>
-              <p class="card-text">プレゼントタイプ：<br></p>
-              <p class="card-text">価格：<br></p>
-              <p class="card-text">人数：<br></p>
-              <p class="card-text">情報：<br></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbar6" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbar6" style=""> <a class="navbar-brand text-primary d-none d-md-block" href="#">
-          <i class="fa d-inline fa-lg fa-circle"></i>
-          <b>ワルード似顔絵</b>
-        </a>
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"> <a class="nav-link" href="#">サンプルイメージ</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">注文確認</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">注文について</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">お知らせ</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ・作家募集<br></a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <div class="py-4 text-center">
     <div class="container">
       <div class="row py-3">
@@ -126,8 +102,8 @@
             <div class="form-group my-3 w-100 p-2">
               <label><b>プレミアムラッピングの有無</b></label>
               <select name="select" class="w-100">
-                <option value="Y">しない</option>
-                <option value="N">プレミアムラッピング希望（+¥500）</option>
+                <option value="false">しない</option>
+                <option value="true">プレミアムラッピング希望（+¥500）</option>
               </select>
             </div>
           </div>
@@ -136,50 +112,85 @@
       </div>
     </div>
   </div>
-  <div class="py-5" style="background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75)); background-size: 100%;">
+  <div class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="text-center mx-auto col-md-12">
-          <h1>Pick a pricing</h1>
+      <div class="row py-3">
+        <div class="mx-auto col-lg-6 col-6">
+          <h1 class="my-2 text-center">注文情報</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 p-3" style="float: none; margin: 0 auto;">
-          <div class="card text-center">
-            <div class="card-body p-4">
-              <h5> <b>Team</b> </h5>
-              <p>2-15 projects</p>
-              <h2 class="my-3"> <b>$69</b> <sub>/month</sub> </h2>
-              <p class="my-3">I throw myself down among the tall grass by the trickling stream.</p>
-              <hr>
-              <ul class="list-unstyled my-3">
-                <li class="mb-1">Four</li>
-                <li class="mb-1">Five</li>
-                <li class="mb-1">Six</li>
-              </ul> <a class="btn btn-primary mt-3" href="#">Start now</a>
+        <div class="mx-auto col-md-6 p-4">
+          <div class="card border-primary">
+            <img class="card-img-top" src="../../Downloads/chi1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">価格：</li>
+              <li class="list-group-item">人数：</li>
+              <li class="list-group-item">作品情報：</li>
+            </ul>
           </div>
+        </div>
+        <div class="col-md-6 p-4 my-auto mx-auto">
+          <ul class="list-group list-group-flush text-right">
+            <li class="list-group-item  d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">作品価格</h6>
+              </div>
+              <span class="text-muted">¥10000</span>
+            </li>
+            <li class="list-group-item  d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">フレーム</h6>
+              </div>
+              <span class="text-muted">¥4000</span>
+            </li>
+            <li class="list-group-item  d-flex justify-content-between lh-condensed">
+              <div>
+                <h5 class="my-0">支払い金額</h5>
+              </div>
+              <span class="text-muted"><b>¥14000</b></span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
   <div class="py-4 text-center">
     <div class="container">
+      <div class="row py-3">
+        <div class="mx-auto col-lg-8 col-10">
+          <h1 class="my-2">注文者情報</h1>
+        </div>
+      </div>
       <div class="row">
-        <div class="mx-auto col-lg-6 col-10">
-          <h1>注文者情報</h1>
+        <div class="mx-auto col-md-12 col-lg-6" style="">
           <form class="text-left">
             <div class="form-row">
               <div class="form-group col-md-6"> <label><b>名前（漢字）</b></label> <input type="text" class="form-control" placeholder="山田太郎"> </div>
               <div class="form-group col-md-6"> <label><b>名前（ふりがな）</b></label> <input type="text" class="form-control" placeholder="やまだたろう"> </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6"> <label><b>メール</b></label> <input type="text" class="form-control" placeholder="gmail@gmail.com"> </div>
-              <div class="form-group col-md-6"> <label><b>ラインID</b></label> <input type="text" class="form-control" placeholder="lindid"> </div>
+              <div class="form-group col-md-6"> <label><b>メール</b></label> <input type="text" class="form-control" placeholder="gmail@gmail.com">
+                <div class="form-group py-2">
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                  <a class="btn btn-outline-primary" href="#"><i class="fa fa-car fa-2x"></i></a>
+                </div>
+              </div>
+              <div class="form-group col-md-6"> <label><b>ラインID</b></label> <input type="text" class="form-control" placeholder="lindid">
+                <div class="form-group py-2">
+                  <a class="btn btn-outline-primary w-100" href="#"><i class="fa fa-car fa-2x"></i></a>
+                </div>
+              </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6"> <label><b>電話番号（携帯）</b></label> <input type="text" class="form-control" placeholder="09012345678"> </div>
-              <div class="form-group col-md-6"> <label><b>電話番号（家）</b></label> <input type="text" class="form-control" placeholder="0481234567"> </div>
+              <div class="form-group col-md-6"> <label><b class="">電話番号（家）</b></label> <input type="text" class="form-control" placeholder="0481234567"> </div>
             </div>
             <div class="form-group"><label><b>お届け先（郵便番号）</b></label>
               <div class="input-group w-75">
