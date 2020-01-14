@@ -1,3 +1,7 @@
 # world_caricature_mock
 
-pingendoで作成、css, html修正
+pingendo + css, html + grapejs
+
+https://pingendo.com/
+
+https://grapesjs.com/
